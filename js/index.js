@@ -1,6 +1,6 @@
 /* ---- Terminal Window Configurtaion ---- */
 var directory = 'content/';
-var files;
+
 var login = '<span class= "user"><b>dap</b>@askprateek.com:~ </span>';
 var dir_list = [];
 
@@ -27,10 +27,15 @@ function appendlist(list){
   files= list.toString().replace(/,/g,' ');
   $('#term').append('<p>' +files+ '</p>');
 };
+
+function appendoutput(file_content){
+  $('#term').append('<p>' + file_content + '<p/>');
+}
+
 getdir(directory);
 appendlist(dir_list);
 
-function addcommand(){
+function appendCommand(){
   //var login = document.getElementById('login').innerHTML;
   var command = document.getElementById('command').value;
   console.log(login);
@@ -38,6 +43,25 @@ function addcommand(){
   $('#term').append('<p>'+ login + " $ "+ command + '</p>' );
 };
 
+
+function readTextFile(file)
+{
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", file, true);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var allText = rawFile.responseText;
+                appendCommand();
+                appendoutput(allText);
+            }
+        }
+    }
+    rawFile.send(null);
+}
 
 
 
@@ -47,10 +71,10 @@ command.addEventListener("keydown", function (e) {
   if (e.keyCode === 9) {
     e.preventDefault();
     //console.log(files);
-    addcommand();
 
     var value = document.getElementById('command').value;
     var user_input= value.split(" ");
+    var files = dir_list;
     console.log(user_input);
     var i=0; var file=user_input[0] + " ";
     if (user_input[1].length){
@@ -66,12 +90,7 @@ command.addEventListener("keydown", function (e) {
     }
   }
 });
-var cat = {
-  'about' : "20, B.Tech - CE, Web|Graphics Designer|Developer",
-  'contact': "Email - dap@askprateek.com ",
-  'projects': 'Home Automation System - Hackon - Treasure Hunt - Graph Plotter - URL Shortner',
-  'skills' : 'Python - Django - HTML - CSS - JS - Ruby on Rails - Adobe Photoshop',
-}
+
 //console.log(cat.about);
 
 /*  ENTER Key Press | Funtionality of Commands   */
@@ -81,31 +100,15 @@ command.addEventListener("keydown", function (e) {
     e.preventDefault();
     var value = document.getElementById('command').value;
     var user_input= value.split(" ");
+    readTextFile("./content/about.txt");
+
   //  console.log(user_input);
 
   }
 });
 
 
-function readTextFile(file)
-{
-    var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", file, true);
-    rawFile.onreadystatechange = function ()
-    {
-        if(rawFile.readyState === 4)
-        {
-            if(rawFile.status === 200 || rawFile.status == 0)
-            {
-                var allText = rawFile.responseText;
-                console.log(allText);
-            }
-        }
-    }
-    rawFile.send(null);
-}
 
-readTextFile("./content/about.txt");
 
 
 /* ---- particles.js config ---- */
@@ -222,7 +225,7 @@ particlesJS("aa_particles", {
 });
 
 
-/* ---- stats.js config ---- */
+/* ---- stats.js config ----
 
 var count_particles, stats, update;
 stats = new Stats;
@@ -240,4 +243,10 @@ update = function() {
   }
   requestAnimationFrame(update);
 };
-requestAnimationFrame(update);
+requestAnimationFrame(update); */
+var cat = {
+  'about' : "20, B.Tech - CE, Web|Graphics Designer|Developer",
+  'contact': "Email - dap@askprateek.com ",
+  'projects': 'Home Automation System - Hackon - Treasure Hunt - Graph Plotter - URL Shortner',
+  'skills' : 'Python - Django - HTML - CSS - JS - Ruby on Rails - Adobe Photoshop',
+}
