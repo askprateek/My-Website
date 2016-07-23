@@ -57,6 +57,8 @@ function readTextFile(file)
                 var allText = rawFile.responseText;
                 appendCommand();
                 appendoutput(allText);
+                var objDiv = document.getElementById("term");
+                objDiv.scrollTop = objDiv.scrollHeight;
             }
         }
     }

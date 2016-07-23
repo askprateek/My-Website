@@ -79,6 +79,9 @@ canvas {
   font-size: 15px;
   line-height: normal;
   font-family: 'Ubuntu Mono', monospace;
+  overflow: auto;
+  overflow-y: auto;
+  max-height: 200px;
 
 }
 
