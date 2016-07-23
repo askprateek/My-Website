@@ -1,27 +1,53 @@
 /* ---- Terminal Window Configurtaion ---- */
-var directory = './content/';
-$(document).ready(function(){
-        $.ajax({
-          url: directory,
-          success: function(data){
-            var folder;
-            $(data).find("td > a").each(function(){
-              folder=$(this).attr("href");
-              console.log(folder);
-              folder=$(this).attr("href");
+var directory = 'content/';
+var files;
+var login = '<span class= "user"><b>dap</b>@askprateek.com:~ </span>';
+var dir_list = [];
 
-            });
-            }
-          });
-    });
-var files = document.getElementById('files').innerHTML.split(" ");
-//console.log(files);
+//$(document).ready(function(){
+function getdir(dir){
+  $.ajax({
+    url: dir,
+    async: false,
+    success: function(data){
+      var folder;
+      $(data).find("td > a").each(function(){
+        folder=$(this).attr('href');
+        //console.log(folder);
+        dir_list.push(folder);
+        //console.log(folder);
+      });
+    }
+  });
+};
+
+
+function appendlist(list){
+  list.shift();
+  files= list.toString().replace(/,/g,' ');
+  $('#term').append('<p>' +files+ '</p>');
+};
+getdir(directory);
+appendlist(dir_list);
+
+function addcommand(){
+  //var login = document.getElementById('login').innerHTML;
+  var command = document.getElementById('command').value;
+  console.log(login);
+  console.log(command);
+  $('#term').append('<p>'+ login + " $ "+ command + '</p>' );
+};
+
+
+
 
 /*   Tab Key Funtionality    */
 command.addEventListener("keydown", function (e) {
   /*  ALT - 18, TAB - 9 , CTRL - 17  */
   if (e.keyCode === 9) {
     e.preventDefault();
+    //console.log(files);
+    addcommand();
 
     var value = document.getElementById('command').value;
     var user_input= value.split(" ");
