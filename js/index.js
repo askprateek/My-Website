@@ -49,10 +49,16 @@ function clearInput(){
   document.getElementById('command').value="";
 };
 
+function clearScreen(){
+  document.getElementById('term').innerHTML="";
+};
+
 function autoscroll(){
   var objDiv = document.getElementById("term");
   objDiv.scrollTop = objDiv.scrollHeight;
 };
+
+
 function readTextFile(file, command)
 {
     var rawFile = new XMLHttpRequest();
@@ -121,7 +127,10 @@ command.addEventListener("keydown", function (e) {
       case 'cat':
         var file_url = directory + user_input[1];
         readTextFile(file_url, command);
+        break;
 
+      case 'clear':
+        clearScreen();
         break;
 
       default:
