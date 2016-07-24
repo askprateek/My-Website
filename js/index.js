@@ -2,10 +2,11 @@
 var directory = 'content/';
 
 var login = '<span class= "user"><b>dap</b>@askprateek.com:~ </span>';
-var dir_list = [];
+
 
 //$(document).ready(function(){
 function getdir(dir){
+  var dir_list = [];
   $.ajax({
     url: dir,
     async: false,
@@ -19,6 +20,7 @@ function getdir(dir){
       });
     }
   });
+  return dir_list;
 };
 
 
@@ -32,8 +34,8 @@ function appendoutput(file_content){
   $('#term').append('<p>' + file_content + '<p/>');
 }
 
-getdir(directory);
-appendlist(dir_list);
+;
+appendlist(getdir(directory));
 
 function appendCommand(){
   //var login = document.getElementById('login').innerHTML;
@@ -45,8 +47,12 @@ function appendCommand(){
 
 function clearInput(){
   document.getElementById('command').value="";
-}
+};
 
+function autoscroll(){
+  var objDiv = document.getElementById("term");
+  objDiv.scrollTop = objDiv.scrollHeight;
+};
 function readTextFile(file)
 {
     var rawFile = new XMLHttpRequest();
@@ -60,8 +66,7 @@ function readTextFile(file)
                 var allText = rawFile.responseText;
                 appendCommand();
                 appendoutput(allText);
-                var objDiv = document.getElementById("term");
-                objDiv.scrollTop = objDiv.scrollHeight;
+
             }
         }
     }
@@ -104,10 +109,24 @@ command.addEventListener("keydown", function (e) {
   if (e.keyCode === 13) {
     e.preventDefault();
     var value = document.getElementById('command').value;
-    var user_input= value.split(" ");
+    var user_input= value.toLowerCase().split(" ");
+    switch (user_input[0]) {
+      case 'ls':
+        appendCommand();
+        appendlist(getdir(directory));
+        break;
 
+      case 'cat':
+        break;
 
-    readTextFile("./content/about.txt");
+      default:
+        break;
+
+    }
+    clearInput();
+    autoscroll();
+
+  //  readTextFile("./content/about.txt");
 
   //  console.log(user_input);
 
