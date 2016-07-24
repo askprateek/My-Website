@@ -43,6 +43,9 @@ function appendCommand(){
   $('#term').append('<p>'+ login + " $ "+ command + '</p>' );
 };
 
+function clearInput(){
+  document.getElementById('command').value="";
+}
 
 function readTextFile(file)
 {
@@ -102,6 +105,8 @@ command.addEventListener("keydown", function (e) {
     e.preventDefault();
     var value = document.getElementById('command').value;
     var user_input= value.split(" ");
+
+
     readTextFile("./content/about.txt");
 
   //  console.log(user_input);
