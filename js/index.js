@@ -102,6 +102,7 @@ command.addEventListener("keydown", function (e) {
       for (i=0; i <files.length; i++){
         if ( files[i].startsWith(user_input[1])  ){
           file += files[i];
+          break;
         }
       }
 
@@ -163,6 +164,7 @@ command.addEventListener("keydown", function (e) {
         break;
 
       default:
+      $('#term').append('<p>Illegal Command</p>');
         break;
 
     }
