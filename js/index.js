@@ -37,9 +37,9 @@ function appendoutput(file_content){
 ;
 appendlist(getdir(directory));
 
-function appendCommand(){
+function appendCommand(command){
   //var login = document.getElementById('login').innerHTML;
-  var command = document.getElementById('command').value;
+  //var command = document.getElementById('command').value;
   console.log(login);
   console.log(command);
   $('#term').append('<p>'+ login + " $ "+ command + '</p>' );
@@ -53,7 +53,7 @@ function autoscroll(){
   var objDiv = document.getElementById("term");
   objDiv.scrollTop = objDiv.scrollHeight;
 };
-function readTextFile(file)
+function readTextFile(file, command)
 {
     var rawFile = new XMLHttpRequest();
     rawFile.open("GET", file, true);
@@ -64,8 +64,9 @@ function readTextFile(file)
             if(rawFile.status === 200 || rawFile.status == 0)
             {
                 var allText = rawFile.responseText;
-                appendCommand();
+                appendCommand(command);
                 appendoutput(allText);
+                autoscroll();
 
             }
         }
@@ -84,7 +85,8 @@ command.addEventListener("keydown", function (e) {
 
     var value = document.getElementById('command').value;
     var user_input= value.split(" ");
-    var files = dir_list;
+    var files = getdir(directory);
+    //console.log(files);
     console.log(user_input);
     var i=0; var file=user_input[0] + " ";
     if (user_input[1].length){
@@ -108,15 +110,18 @@ command.addEventListener("keydown", function (e) {
   /*  ALT - 18, TAB - 9 , CTRL - 17 , ENTER - 13 */
   if (e.keyCode === 13) {
     e.preventDefault();
-    var value = document.getElementById('command').value;
-    var user_input= value.toLowerCase().split(" ");
+    var command = document.getElementById('command').value;
+    var user_input= command.toLowerCase().split(" ");
     switch (user_input[0]) {
       case 'ls':
-        appendCommand();
+        appendCommand(command);
         appendlist(getdir(directory));
         break;
 
       case 'cat':
+        var file_url = directory + user_input[1];
+        readTextFile(file_url, command);
+
         break;
 
       default:
