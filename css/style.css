@@ -85,7 +85,7 @@ canvas {
 
 }
 
-.user{
+.user, #root{
   color:#ff5722;
 }
 .output{

@@ -1,8 +1,8 @@
 /* ---- Terminal Window Configurtaion ---- */
 var directory = 'content/';
-
-var login = '<span class= "user"><b>dap</b>@askprateek.com:~ </span>';
-
+var path='';
+var login = '<span class="user"><b>dap</b>@askprateek.com:~ ';
+var bash = document.getElementById('root').innerHTML;
 
 //$(document).ready(function(){
 function getdir(dir){
@@ -38,13 +38,16 @@ function appendoutput(file_content){
 appendlist(getdir(directory));
 
 function appendCommand(command){
-  //var login = document.getElementById('login').innerHTML;
-  //var command = document.getElementById('command').value;
-  console.log(login);
-  console.log(command);
-  $('#term').append('<p>'+ login + " $ "+ command + '</p>' );
+  var span = document.getElementById('root').innerHTML;
+  $('#term').append('<p><span class="user">' + span + '</span> $ ' + command + '</p>' );
+
 };
 
+function changeCommand(path){
+  document.getElementById('root').innerHTML = bash + path;
+};
+
+/* Clear Screen, Input, AutoScroll */
 function clearInput(){
   document.getElementById('command').value="";
 };
@@ -58,7 +61,7 @@ function autoscroll(){
   objDiv.scrollTop = objDiv.scrollHeight;
 };
 
-
+/* Read File  */
 function readTextFile(file, command)
 {
     var rawFile = new XMLHttpRequest();
@@ -125,12 +128,38 @@ command.addEventListener("keydown", function (e) {
         break;
 
       case 'cat':
+      if(user_input[1].endsWith('txt')){
         var file_url = directory + user_input[1];
         readTextFile(file_url, command);
+      }
+      else{
+
+      }
+
         break;
 
       case 'clear':
         clearScreen();
+        break;
+
+      case 'cd':
+        if (user_input[1].endsWith('txt')){
+          appendCommand(command);
+          $('#term').append('<p>cd: '+user_input[1]+': Not a directory</p>');
+        }
+        else if ( (user_input[1]=='..') || (user_input[1]=='/') ){
+          directory = 'content/';
+          path ='';
+          appendCommand(command);
+          changeCommand(path);
+        }
+        else{
+          directory+=user_input[1];
+          path=user_input[1];
+          //console.log(path);
+          appendCommand(command);
+          changeCommand(path);
+        }
         break;
 
       default:
@@ -139,10 +168,6 @@ command.addEventListener("keydown", function (e) {
     }
     clearInput();
     autoscroll();
-
-  //  readTextFile("./content/about.txt");
-
-  //  console.log(user_input);
 
   }
 });
