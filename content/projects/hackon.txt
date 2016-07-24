@@ -1,0 +1,4 @@
+Online Cryptic/Technical Challenges | <a href="https://github.com/askprateek/Hackon">Github</a><br>
+Students have to solve 10 different technical challenges to win the game.<br>
+Received 100+ participation.<br>
+Skills: JavaScript | PHP | HTML | CSS
