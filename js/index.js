@@ -3,7 +3,8 @@ var directory = 'content/';
 var path='';
 var login = '<span class="user"><b>dap</b>@askprateek.com:~ ';
 var bash = document.getElementById('root').innerHTML;
-
+var lastcommands=['ls',];
+var commandindex=1;
 //$(document).ready(function(){
 function getdir(dir){
   var dir_list = [];
@@ -60,6 +61,10 @@ function autoscroll(){
   var objDiv = document.getElementById("term");
   objDiv.scrollTop = objDiv.scrollHeight;
 };
+
+function setcommand(index){
+  document.getElementById('command').value=lastcommands[index];
+}
 
 /* Read File  */
 function readTextFile(file, command)
@@ -121,6 +126,9 @@ command.addEventListener("keydown", function (e) {
   if (e.keyCode === 13) {
     e.preventDefault();
     var command = document.getElementById('command').value;
+    lastcommands.push(command);
+    console.log(lastcommands);
+    commandindex=lastcommands.length;
     var user_input= command.toLowerCase().split(" ");
     switch (user_input[0]) {
       case 'ls':
@@ -132,6 +140,7 @@ command.addEventListener("keydown", function (e) {
       if(user_input[1].endsWith('txt')){
         var file_url = directory + user_input[1];
         readTextFile(file_url, command);
+        //console.log(commandindex);
       }
       else{
 
@@ -164,7 +173,8 @@ command.addEventListener("keydown", function (e) {
         break;
 
       default:
-      $('#term').append('<p>Illegal Command</p>');
+      appendCommand(command);
+      $('#term').append('<p>'+command +' :Illegal Command</p>');
         break;
 
     }
@@ -174,6 +184,36 @@ command.addEventListener("keydown", function (e) {
   }
 });
 
+command.addEventListener("keydown", function (e) {
+  /*  ALT - 18, TAB - 9 , CTRL - 17  */
+  if (e.keyCode === 38) { //Top Arrow Key
+    e.preventDefault();
+  //  console.log(lastcommands);
+    //console.log(commandindex);
+    if (commandindex>0){
+      commandindex--;
+    //  console.log(commandindex);
+      setcommand(commandindex);
+
+  }
+  }
+
+  if (e.keyCode === 40){ // Down Arrow Key
+    e.preventDefault();
+    //console.log('down-');
+    //console.log(commandindex);
+    if (commandindex==lastcommands.length-1){
+      clearInput();
+      commandindex++;
+    }
+    else if (commandindex<lastcommands.length-1){
+      commandindex++;
+    //  console.log(commandindex);
+      setcommand(commandindex);
+    }
+
+  }
+});
 
 
 
