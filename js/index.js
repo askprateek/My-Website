@@ -143,6 +143,8 @@ command.addEventListener("keydown", function (e) {
         //console.log(commandindex);
       }
       else{
+        appendCommand(command);
+        $('#term').append('<p>cat: Unable to read a directory</p>');
 
       }
 
