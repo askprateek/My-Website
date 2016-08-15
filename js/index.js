@@ -66,6 +66,10 @@ function setcommand(index){
   document.getElementById('command').value=lastcommands[index];
 }
 
+function openHelp(){
+  readHelpFile('../askprateek/help.txt');
+  $('#help').openModal();
+}
 /* Read File  */
 function readTextFile(file, command)
 {
