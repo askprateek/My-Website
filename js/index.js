@@ -1,5 +1,3 @@
-
-//$(document).ready(function(){
 function getdir(dir){
   var dir_list = [];
   $.ajax({
@@ -9,9 +7,7 @@ function getdir(dir){
       var folder;
       $(data).find(element_to_search).each(function(){
         folder=$(this).attr('href');
-        //console.log(folder);
         dir_list.push(folder);
-        //console.log(folder);
       });
     }
   });
@@ -109,12 +105,10 @@ command.addEventListener("keydown", function (e) {
   /*  ALT - 18, TAB - 9 , CTRL - 17  */
   if (e.keyCode === 9) {
     e.preventDefault();
-    //console.log(files);
 
     var value = document.getElementById('command').value;
     var user_input= value.split(" ");
     var files = getdir(directory);
-    //console.log(files);
     console.log(user_input);
     var i=0; var file=user_input[0] + " ";
     if (user_input[1].length){
@@ -132,7 +126,6 @@ command.addEventListener("keydown", function (e) {
   }
 });
 
-//console.log(cat.about);
 
 /*  ENTER Key Press | Funtionality of Commands   */
 command.addEventListener("keydown", function (e) {
@@ -141,7 +134,6 @@ command.addEventListener("keydown", function (e) {
     e.preventDefault();
     var command = document.getElementById('command').value.trim();
     lastcommands.push(command);
-    console.log(lastcommands);
     commandindex=lastcommands.length;
     var user_input= command.toLowerCase().split(" ");
     switch (user_input[0]) {
@@ -156,7 +148,6 @@ command.addEventListener("keydown", function (e) {
       if(user_input[1].endsWith('txt')){
         var file_url = directory + user_input[1];
         readTextFile(file_url, command);
-        //console.log(commandindex);
       }
       else{
         appendCommand(command);
@@ -184,7 +175,6 @@ command.addEventListener("keydown", function (e) {
         else{
           directory+=user_input[1];
           path=user_input[1];
-          //console.log(path);
           appendCommand(command);
           changeCommand(path);
         }
@@ -196,8 +186,6 @@ command.addEventListener("keydown", function (e) {
         autoscroll();
         readHelpFile('terminal/help.txt');
         $('#help').openModal();
-
-      //  readTextFile('../askprateek/help.txt', command);
         break;
 
       default:
@@ -216,11 +204,8 @@ command.addEventListener("keydown", function (e) {
   /*  ALT - 18, TAB - 9 , CTRL - 17  */
   if (e.keyCode === 38) { //Top Arrow Key
     e.preventDefault();
-  //  console.log(lastcommands);
-    //console.log(commandindex);
     if (commandindex>0){
       commandindex--;
-    //  console.log(commandindex);
       setcommand(commandindex);
 
   }
@@ -228,15 +213,12 @@ command.addEventListener("keydown", function (e) {
 
   if (e.keyCode === 40){ // Down Arrow Key
     e.preventDefault();
-    //console.log('down-');
-    //console.log(commandindex);
     if (commandindex==lastcommands.length-1){
       clearInput();
       commandindex++;
     }
     else if (commandindex<lastcommands.length-1){
       commandindex++;
-    //  console.log(commandindex);
       setcommand(commandindex);
     }
 
