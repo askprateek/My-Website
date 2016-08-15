@@ -125,7 +125,7 @@ command.addEventListener("keydown", function (e) {
   /*  ALT - 18, TAB - 9 , CTRL - 17 , ENTER - 13 */
   if (e.keyCode === 13) {
     e.preventDefault();
-    var command = document.getElementById('command').value;
+    var command = document.getElementById('command').value.trim();
     lastcommands.push(command);
     console.log(lastcommands);
     commandindex=lastcommands.length;
@@ -136,6 +136,8 @@ command.addEventListener("keydown", function (e) {
         appendlist(getdir(directory));
         break;
 
+      case 'vim':
+      case 'vi':
       case 'cat':
       if(user_input[1].endsWith('txt')){
         var file_url = directory + user_input[1];
@@ -144,7 +146,7 @@ command.addEventListener("keydown", function (e) {
       }
       else{
         appendCommand(command);
-        $('#term').append('<p>cat: Unable to read a directory</p>');
+        $('#term').append('<p>cat: Unable to read a directory. Try cd '+user_input[1]+'</p>');
 
       }
 
@@ -173,6 +175,9 @@ command.addEventListener("keydown", function (e) {
           changeCommand(path);
         }
         break;
+        // CD Command end
+
+
 
       default:
       appendCommand(command);
