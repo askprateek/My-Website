@@ -38,21 +38,30 @@
           </div>
           <div class="input-area">
 
-          <span id= "root"><b>dap</b>@askprateek.com:~ </span>&nbsp$  <input id = "command" type = "text" autofocus>
+          <span id= "root"><b>dap</b>@askprateek.com:~ </span>&nbsp$  <input id = "command" type = "text" value = 'help' autofocus>
         </div>
       </div>
     </div>
 
   </div>
 </div>
-
+<!-- Modal Structure -->
+  <div id="help" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Help | How to use ?</h4>
+      <p id = "helptext"></p>
+    </div>
+    <div class="modal-footer">
+      <a onclick="$('#help').closeModal();$('#command').focus()" class="modal-action modal-close waves-effect waves-red btn-flat ">close</a>
+    </div>
+  </div>
   <div id="aa_particles"></div>
 
 
   <script src="http://vincentgarreau.com/particles.js/particles.js"></script>
   <script src='http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
   <script src="js/index.js"></script>
   <script>
 

@@ -88,6 +88,22 @@ function readTextFile(file, command)
     rawFile.send(null);
 }
 
+function readHelpFile(file){
+  var rawFile = new XMLHttpRequest();
+  rawFile.open("GET", file, true);
+  rawFile.onreadystatechange = function ()
+  {
+      if(rawFile.readyState === 4)
+      {
+          if(rawFile.status === 200 || rawFile.status == 0)
+          {
+              var allText = rawFile.responseText;
+              $('#helptext').html(allText);
+          }
+      }
+  }
+  rawFile.send(null);
+}
 
 
 /*   Tab Key Funtionality    */
@@ -177,7 +193,14 @@ command.addEventListener("keydown", function (e) {
         break;
         // CD Command end
 
+      case 'help':
+        appendCommand(command);
+        autoscroll();
+        readHelpFile('../askprateek/help.txt');
+        $('#help').openModal();
 
+      //  readTextFile('../askprateek/help.txt', command);
+        break;
 
       default:
       appendCommand(command);

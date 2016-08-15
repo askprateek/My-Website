@@ -1,0 +1,18 @@
+To list files in the current directory:- <br><b>$ ls</b> <br><hr>
+
+To read content of any file :- <br>
+<b>
+$ cat about.txt <br>
+$ vi about.txt <br>
+$ vim about.txt <br>
+</b>
+These commands will open the file <b>about.txt</b>. Replace it with other file names<br><hr>
+
+To change directory :- <br><b> $cd projects/</b><br>
+To go back to previous directory :- <br><b> $ cd ..</b> OR <b>$ cd /</b><br><hr>
+
+To clear terminal Screen:- <br> <b>$ clear</b> <br><hr>
+
+Miscellaneous Features:- <br>
+<b>1.</b> You can use TAB key to autocomplete files and folder names. Ex- Type 'cat a' then press TAB key.<br>
+<b>2.</b> You can use UP and DOWN arrow key to navigate through previous commands.
