@@ -1,4 +1,0 @@
-Url Shortening service app build on Django.
-| <a href ="https://github.com/askprateek/URL-Shortner-Django">github</a>
-| <a href="https://shortit-dap.herokuapp.com/">web</a> <br>
-Skills: Python | Django
