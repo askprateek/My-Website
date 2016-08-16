@@ -1,0 +1,3 @@
+Treasure Hunt Application for college students. | <a href = "https://github.com/askprateek/Django---Treasure-Hunt">github</a> <br>
+Students have to solve the mysterious challenges to level up and complete the game.<br>
+Skills : Django | Postgresql

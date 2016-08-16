@@ -1,0 +1,2 @@
+Application to plot graphs of Polynomial Equations | <a href ="https://github.com/askprateek/Django-Graph-Plotter">github</a><br>
+Skills: Python | Django | Bokeh

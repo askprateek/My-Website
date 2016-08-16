@@ -1,0 +1,7 @@
+Home Automation system is a IoT based project which include the following features -><br>
+1. Control Home appliances via mobile device from anywhere in the world.<br>
+2. Home Security - Complete home lockdown and notification in case of unauthorized access to home.<br>
+
+There are lots of things which will be added to it like using voice to switch on/off lights, fans etc. Facial recognition for entry in home. Energy management system which helps in conserving energy.
+We can also automate regular task like Turning on Water motor ON/OFF in morning and other mundane tasks.<br>
+Skills: Python | Django | <a href ="https://github.com/askprateek/Home-Automation-Backend">Github</a>
