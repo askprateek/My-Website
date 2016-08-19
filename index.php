@@ -1,3 +1,3 @@
 <?php
-include('terminal/main.html');
+include('terminal/main.php');
 ?>

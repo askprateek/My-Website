@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>Digital Artist Prateek </title>
-  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
-  <link rel="stylesheet" href="terminal/css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
-</head>
-<body>
+<section id = 'aa_particles'>
 
 <div><i class=" help-icon medium material-icons" onclick="openHelp()">info_outline</i></div>
 <div class="row main">
@@ -49,15 +38,6 @@
       <a onclick="$('#help').closeModal();$('#command').focus()" class="modal-action modal-close waves-effect waves-red btn-flat ">close</a>
     </div>
   </div>
-  <div id="aa_particles"></div>
 
-  <script src='//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-  <script src="terminal/js/server-config.js"></script>
-  <script src="terminal/js/index.js"></script>
-  <script>
 
-  </script>
-</body>
-</html>
+</section>

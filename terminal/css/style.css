@@ -4,15 +4,17 @@
 
 html,body {
   margin: 0;
-  background: black;
+  background: white;
+  min-height: 100%;
+}
+section{
+  position: relative;
+  height: 100vh;
 }
 h1,h2,h3,h4,h5,h6,#help{
   font-family: 'Roboto', sans-serif;
 }
-canvas {
-  display: block;
-  vertical-align: bottom;
-}
+
 i.medium{
   background: white;
   border-radius: 100%;
@@ -20,17 +22,14 @@ i.medium{
 .help-icon{
   z-index: 10;
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   color:black;
-  bottom :10px;
-  right :10px;
+  bottom :5%;
+  right :5%;
 }
 #aa_particles {
-  z-index: 4;
   width: 100%;
-  height: 100vh;
   background: black;
-  position: fixed;
 }
 .thin {
   color: black;
@@ -62,6 +61,7 @@ i.medium{
   width: 100%;
   height: 351px;
   font-size: 15px;
+  color: black;
   display:inline-block;
   margin: 0;
   padding: 10px;
