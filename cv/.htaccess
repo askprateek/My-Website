@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^cv\.askprateek\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.cv\.askprateek\.com$
+RewriteRule ^/?$ "https\:\/\/www\.askprateek\.com\/resume\.docx" [R=301,L]
+

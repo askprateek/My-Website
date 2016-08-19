@@ -1,0 +1,21 @@
+<manifest alg="2" build="2015.0.0.309" opt="false" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="askprateek.com" resolutions="1x" timestamp="1460292474762">
+  <folder name="css">
+    <file name="site_global.css" crc="453856629"/>
+    <file name="master_a-master.css" crc="3770367712" ref="index"/>
+    <file name="index.css" crc="4066216993" ref="index"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="4255413929" ref="index"/>
+    <file name="museutils.js" crc="183364071" ref="index"/>
+    <file name="jquery.scrolleffects.js" crc="3860644955" ref="index"/>
+    <file name="pie.js" crc="3827607177" ref="index"/>
+    <file name="jquery.musemenu.js" crc="3957776250" ref="index"/>
+    <file name="jquery.watch.js" crc="71412426" ref="index"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index"/>
+  </folder>
+  <folder name="images">
+    <file name="logo-v2-white-stroke-u141.png" crc="4071074152" ref="index"/>
+    <file name="dap.jpg" crc="3819006913" seo="true" ref="index"/>
+  </folder>
+  <file name="index.html" crc="413113866" seo="true" mt="1460292413481" redirect="true"/>
+</manifest>

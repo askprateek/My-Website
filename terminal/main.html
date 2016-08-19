@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Digital Artist Prateek </title>
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+  <link rel="stylesheet" href="terminal/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <!---
+  <div class="aa_sec">
+    <div class="aa_txt">
+      <span class="aa_inner">
+      <p>Digital <span class="aa_of">Artist</span> Prateek</p>
+      </span>
+    </div>
+-->
+<div><i class=" help-icon medium material-icons" onclick="openHelp()">info_outline</i></div>
+<div class="row main">
+  <div class="col s12 m10 offset-m1 l6 offset-l3">
+    <div class="browser">
+
+      <div class="top-bar">
+        <ul class="list">
+        <li class="red circle"></li>
+        <li class="yellow circle"></li>
+        <li class="green circle"></li>
+        <li class="terminal" id= 'title'>dap@askprateek.com:~</li>
+      </ul>
+
+      </div>
+      <div class="browser-window">
+        <h2 class="thin">Digital Artist Prateek</h2>
+        <div class="content" id= 'term'>
+          <p><span id="login" class= "user"><b>dap</b>@askprateek.com:~ </span> $ ls </p>
+          </div>
+          <div class="input-area">
+
+          <span id= "root"><b>dap</b>@askprateek.com:~ </span>&nbsp$  <input id = "command" type = "text" value = 'help' autofocus>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- Modal Structure -->
+  <div id="help" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Help | How to use ?</h4>
+      <p id = "helptext"></p>
+    </div>
+    <div class="modal-footer">
+      <a onclick="$('#help').closeModal();$('#command').focus()" class="modal-action modal-close waves-effect waves-red btn-flat ">close</a>
+    </div>
+  </div>
+  <div id="aa_particles"></div>
+
+
+  <script src="http://vincentgarreau.com/particles.js/particles.js"></script>
+  <script src='http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+  <script src="terminal/js/server-config.js"></script>
+  <script src="terminal/js/index.js"></script>
+  <script>
+
+  </script>
+</body>
+</html>
