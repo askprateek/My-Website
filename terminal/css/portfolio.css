@@ -58,6 +58,7 @@
 .intro {
     z-index: 10;
     color:white;
+    width: inherit;
     position: absolute;
     padding: 5px;
     border : 5px solid #333a41;
