@@ -1,1 +1,81 @@
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {color:red;}
+    25%  {color:#ffab40;}
+    50%  {color:blue;}
+    75%  {color:green;}
+    100% {color:red;}
+}
 
+/* Standard syntax */
+@keyframes example {
+    0%   {color:red;}
+    25%  {color:#ffab40;}
+    50%  {color:blue;}
+    75%  {color:green;}
+    100% {color:red;}
+}
+
+
+@keyframe dapr{
+    0% {left:50;right:50}
+    50% {left:0;right:0}
+    100% {left:50;right:50;}
+}
+
+.lol{
+/*    -webkit-animation-name: exapmle;              Chrome, Safari, Opera */
+/*    -webkit-animation-duration: 4s;               Chrome, Safari, Opera */
+/*    -webkit-animation-iteration-count: infinite;  Chrome, Safari, Opera */
+/*    animation-name: example;*/
+/*    animation-duration: 4s;*/
+/*    animation-iteration-count: infinite;*/
+    animation-name:dapr;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+.underline{
+/*    background: #ffab40;*/
+    padding: 10px;
+    position: relative;
+/*    overflow: hidden;*/
+}
+.underline:after{
+    content: "";
+    position: absolute;
+    background: black;
+    height: 4px;
+    left: 50%;
+    right: 50%;
+    bottom:0;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+.under:after{
+    left :0;
+    right: 0;
+}
+
+.space-invader{ box-shadow: 0 0 0 1em red, 0 1em 0 1em red, -2.5em 1.5em 0 .5em red, 2.5em 1.5em 0 .5em red, -3em -3em 0 0 red, 3em -3em 0 0 red, -2em -2em 0 0 red, 2em -2em 0 0 red, -3em -1em 0 0 red, -2em -1em 0 0 red, 2em -1em 0 0 red, 3em -1em 0 0 red, -4em 0 0 0 red, -3em 0 0 0 red, 3em 0 0 0 red, 4em 0 0 0 red, -5em 1em 0 0 red, -4em 1em 0 0 red, 4em 1em 0 0 red, 5em 1em 0 0 red, -5em 2em 0 0 red, 5em 2em 0 0 red, -5em 3em 0 0 red, -3em 3em 0 0 red, 3em 3em 0 0 red, 5em 3em 0 0 red, -2em 4em 0 0 red, -1em 4em 0 0 red, 1em 4em 0 0 red, 2em 4em 0 0 red; background: red; width: 1em; height: 1em; overflow: hidden; margin: 50px 0 70px 65px; } 
+
+
+@keyframes back{
+    0%  {background-color: red;}
+    25% {background: #ffab40}
+    50% {background-color: green;}
+    75% {background: #79ccf0;}
+    100%{background-color: red;}
+}
+
+.back-anim {
+    animation-name: bac;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}

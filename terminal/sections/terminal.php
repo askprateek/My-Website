@@ -1,4 +1,4 @@
-<section id = 'aa_particles'>
+<section id = 'aa_particles' class='hide' >
 
 <div><i class=" help-icon medium material-icons" onclick="openHelp()">info_outline</i></div>
 <div class="row main">
