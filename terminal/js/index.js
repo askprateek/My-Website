@@ -1,4 +1,4 @@
-function getdir(dir){
+function getdir(dir) {
   var dir_list = [];
   $.ajax({
     url: dir,
@@ -25,7 +25,6 @@ function appendoutput(file_content){
   $('#term').append('<p>' + file_content + '<p/>');
 }
 
-;
 appendlist(getdir(directory));
 
 function appendCommand(command){
@@ -224,3 +223,5 @@ command.addEventListener("keydown", function (e) {
 
   }
 });
+
+//NON Terminal Functions

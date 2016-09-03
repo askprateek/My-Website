@@ -4,11 +4,14 @@
 <script src="terminal/js/server-config.js"></script>
 <script src="terminal/js/index.js"></script>
 <script>
+    function scrollAnimate(link) {
+    $('html, body').animate({
+              scrollTop: $(link).offset().top
+        }, 1000);               
+    };
+
     console.log("here");
-    $(document).ready(function() {
-    setInterval(function(){
-      $('.dap').toggleClass("under");
-        console.log("lol");
-    }, 1200);
-});
+    $(document).ready(function() {    
+        scrollAnimate('#home');
+    });
 </script>
