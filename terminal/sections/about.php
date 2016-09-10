@@ -21,6 +21,7 @@
             <li><a href="#work">Work</a></li>
             <li><a href="https://github.com/askprateek" target="_blank">Github</a></li>
             <li><a href="https://askprateek.deviantart.com/" target="_blank">Deviantart</a></li>
+            <li><a href="https://blog.askprateek.com/" target="_blank">blog</a> </li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </navbar>
