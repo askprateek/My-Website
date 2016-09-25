@@ -1,0 +1,36 @@
+/* Common CSS */
+html{
+    background: #F44336;
+}
+section{
+    height: 100vh;
+}
+
+nav{
+    background: none;
+    box-shadow: none;
+    text-transform: uppercase;
+    position: absolute;
+}
+.side-nav a{
+    font-size: 24px;
+}
+nav .button-collapse{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+/* SVG */
+#svg{
+    width: 80%;
+/*    height: 40%;*/
+}
+
+@media only screen and (max-width :720px){
+    #svg{
+        height: 100%;
+    }
+}
+
+/* INTRO SECTION CSS*/

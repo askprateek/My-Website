@@ -1,0 +1,14 @@
+.collapsible-header{
+    background-color: aliceblue;
+    color:#f44336;
+}
+
+.collapsible-body{
+    color:aliceblue;
+}
+.project_preview img {
+    max-width: 100%;
+    margin: 7px;
+    border: 10px solid aliceblue;
+    border-radius: 5px;
+}

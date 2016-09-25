@@ -1,15 +1,21 @@
 @import 'https://fonts.googleapis.com/css?family=Cuprum';
 .about {
-    background: url('/muse/images/me.png'), url('/muse/images/back.png');
-    background-repeat: no-repeat, repeat;
-    background-position: bottom right, bottom;
-    background-size: 50vh, 10%;
+/*    background: url('/muse/images/me.png'), url('/muse/images/back.png');*/
+/*    background-repeat: no-repeat, repeat;*/
+/*    background-position: bottom right, bottom;*/
+/*    background-size: 50vh, 10%;*/
     text-shadow: 1px 1px 0px black;
+    padding-top: 20vh;
+    z-index: 10;
     
 }
 span{
-    color:#b1ff00;
+    color:#F44336;
     text-decoration: underline;
+}
+.data{
+    background: #000;
+    padding-bottom: 20px;
 }
 .data p,h1,a{
     font-family: 'Cuprum', sans-serif;
@@ -20,11 +26,18 @@ span{
     font-size: 20px;
     letter-spacing: 1px;
 }
-
-.data{
-    padding-top:  20vh;
-    padding-left: 20vh;
+@media only screen and (max-width :786px){
+    .about{
+        padding-top:5vh; 
+    }
+    .data h1{
+        font-size: 250%;
+    }
+    .data p{
+        font-size: 150%;
+    }
 }
+
 .data h1 {
     font-weight: 200;
 }
@@ -43,14 +56,19 @@ navbar li + li:before{
 navbar li,a{
     font-size: 22px;
     display: inline-block;
-    color: #ebff61;
+    color: white;
     border-bottom: 2px solid rgba(225,0,0,0);
 }
 navbar li a:hover{
-   border-bottom: 2px solid #ebff61;
+   border-bottom: 2px solid white;
     
 }
 
+@media only screen and (max-width:800px){
+    navbar{
+        display: none;
+    }
+}
 .name {
-    color: aliceblue;
+    color: #F44336;
 }
