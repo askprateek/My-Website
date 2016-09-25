@@ -1,12 +1,11 @@
 <section id ="intro">
     <nav>
          <ul id="slide-out" class="side-nav">
-             <li><a href="#work">Work</a></li>
-            <li><a href="https://github.com/askprateek" target="_blank">Github</a></li>
+            <li><a onclick="scrollAnimate('#home')" style ="cursor:pointer">About</a></li>
+            <li><a onclick="scrollAnimate('#work')" style ="cursor:pointer">Work</a></li>
             <li><a href="https://askprateek.deviantart.com/" target="_blank">Deviantart</a></li>
             <li><a href="https://blog.askprateek.com/" target="_blank">blog</a> </li>
-            <li><a href="#contact">Contact</a></li>
-             
+            <li><a onclick="scrollAnimate('#contact')" style ="cursor:pointer">Contact</a></li>
              
         <!--<li><div class="userView">
             <img class="background" src="images/office.jpg">

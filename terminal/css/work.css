@@ -12,3 +12,8 @@
     border: 10px solid aliceblue;
     border-radius: 5px;
 }
+
+.project_header {
+    background: #000;
+    padding-top:30px;
+}

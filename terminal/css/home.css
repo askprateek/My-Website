@@ -3,7 +3,7 @@ html{
     background: #F44336;
 }
 section{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 nav{
@@ -33,4 +33,7 @@ nav .button-collapse{
     }
 }
 
-/* INTRO SECTION CSS*/
+/* Contact SECTION CSS*/
+#contact{
+    padding-top: 20vh; 
+}

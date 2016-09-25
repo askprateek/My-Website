@@ -1,10 +1,10 @@
 <section id="work">
-<div class="container">
-    <div class="row">
-        <div class="col s12">
+    <div class="row ">
+        <div class="col s12 center-align">
             <h1 class="thin">Some of the projects I would like to showcase.</h1>
         </div>
     </div>
+<div class="container">
 <div class="row">
     <div class="col s12 m6">
         <ul class="collapsible" data-collapsible="accordion">
@@ -17,7 +17,7 @@
             </div>
         </li>
         <li>
-            <div class="collapsible-header" onclick="changeImage('iot.png')" ><b>Incognito</b> | Javascript / PHP / HTML / CSS</div>
+            <div class="collapsible-header" onclick="changeImage('incognito.png')" ><b>Incognito</b> | Javascript / PHP / HTML / CSS</div>
             <div class="collapsible-body"><p>Open Anonymous Discussion Platform for FirefoxOS. <br>
                                     Anglehack 2015 Sponsor Winner Idea.<br><br>
 
@@ -25,8 +25,6 @@
                 >Browse Channels on topics that interest you most<br>
                 >Create and publish your channels to a realtime stream for instant social interaction<br>
                 >Post Questions to any number of channels<br>
-                >Peek into any Channel<br>
-                >Find your Posts on separate tab named My Posts<br>
                 >Explore Trending and Latest posted questions in different channels<br>
                 >Never Reveal your Identity</p>  
             </div>
@@ -54,7 +52,7 @@
     </div>
 <!--   Project Previews  -->
     <div class="col s12 m6 project_preview">
-        <img id ="project">
+        <img id ="project" src = "/img/projects.png">
     </div>
     
     
