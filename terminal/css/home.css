@@ -37,3 +37,35 @@ nav .button-collapse{
 #contact{
     padding-top: 20vh; 
 }
+@media only screen and (min-width: 600px){
+    .links {
+        border: 2px solid #FFF;
+    }
+    .links:hover{
+        background: #FFF;
+        transition: .3s;
+    }
+    .links:hover a{
+        color : #F44336;
+        transition: .3s;
+    }
+}
+
+
+@media only screen and (max-width: 790px){
+    .links a {
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .links{
+        margin-top:10px;
+        background:#FFF;
+    }
+    .links a{
+        color: #F44336;
+        font-size:150%;
+    }
+}
+

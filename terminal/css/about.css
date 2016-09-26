@@ -30,8 +30,11 @@ span{
     .about{
         padding-top:5vh; 
     }
-    .data h1{
+     h1{
         font-size: 250%;
+    }
+    h2 {
+        font-size: 200%;
     }
     .data p{
         font-size: 150%;
