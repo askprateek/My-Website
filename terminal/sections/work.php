@@ -7,7 +7,8 @@
 <div class="container">
 <div class="row">
     <div class="col s12 m6">
-        <ul class="collapsible" data-collapsible="accordion">
+        
+        <ul class="collapsible popout" data-collapsible="accordion">
         <li>
             <div class="collapsible-header" onclick="changeImage('iot.png')"><b>Home Automation System</b> | IoT</div>
             <div class="collapsible-body"><p>Home Automation system is a IoT based project which include the following features -><br>
