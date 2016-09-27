@@ -1,6 +1,12 @@
+@import 'https://fonts.googleapis.com/css?family=Cuprum';
 /* Common CSS */
-html{
+html,body{
     background: #F44336;
+    min-height: 100vh;
+}
+.side-nav{
+    background: #F44336;
+    box-shadow: none;
 }
 section{
     min-height: 100vh;
@@ -20,12 +26,105 @@ nav .button-collapse{
     top: 20px;
     left: 20px;
 }
+@keyframes scale{
+    0%,100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+    }
+    25% , 75% {
+        transform: scale(0.8);
+        -webkit-transform: scale(0.8);
+        -moz-transform: scale(0.8);
+        -o-transform: scale(0.8);
+    }
+}
+.scale{
+    animation: scale 2s ease-in-out;
+}
+@keyframes pop{
+    0% {transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+    }
+    
+    50% {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+    }
+    
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+    }
+}
+@-o-keyframes pop{
+    0% {transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+    }
+    
+    50% {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+    }
+    
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+    }
+}
+@-moz-keyframes pop{
+    0% {transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+    }
+    
+    50% {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+    }
+    
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+    }
+}
+@-webkit-keyframes pop{
+    0% {transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+    }
+    
+    50% {
+        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+    }
+    
+    100% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+        -moz-transform: scale(1);
+    }
+}
 
 /* SVG */
 #svg{
     width: 80%;
-/*    height: 40%;*/
+    animation: pop 10s 4s infinite ease-in-out;
+    -webkit-animation: pop 10s 4s infinite ease-in-out;
+    -moz-animation: pop 10s 4s infinite ease-in-out;
+    -o-animation: pop 10s 4s infinite ease-in-out;
 }
+
 
 @media only screen and (max-width :720px){
     #svg{

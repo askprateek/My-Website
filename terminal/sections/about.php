@@ -1,5 +1,4 @@
-<section class="about" id ="home">
-    <div class="back">
+<section id ="home" >
     <div class="row data">
         <div class="col s12 m6 offset-m2">
             <h1>Hi, I'am <span class="name">Prateek Kumar</span></h1>
@@ -11,16 +10,4 @@
             </p>
         </div>
     </div>
-    
-    <navbar>
-        <ul>
-            <li><a onclick="scrollAnimate('#home')" style ="cursor:pointer">About</a></li>
-            <li><a onclick="scrollAnimate('#work')" style ="cursor:pointer">Work</a></li>
-            <li><a href="https://askprateek.deviantart.com/" target="_blank">Deviantart</a></li>
-            <li><a href="https://blog.askprateek.com/" target="_blank">blog</a> </li>
-            <li><a onclick="scrollAnimate('#contact')" style ="cursor:pointer">Contact</a></li>
-        </ul>
-    </navbar>
-    </div>
-
 </section>

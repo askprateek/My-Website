@@ -1,17 +1,13 @@
-@import 'https://fonts.googleapis.com/css?family=Cuprum';
 .about {
-/*    background: url('/muse/images/me.png'), url('/muse/images/back.png');*/
-/*    background-repeat: no-repeat, repeat;*/
-/*    background-position: bottom right, bottom;*/
-/*    background-size: 50vh, 10%;*/
     text-shadow: 1px 1px 0px black;
-    padding-top: 20vh;
-    z-index: 10;
-    
+    z-index: 0;
 }
 span{
     color:#F44336;
     text-decoration: underline;
+}
+#home{
+    padding-top:20vh;
 }
 .data{
     background: #000;
@@ -51,6 +47,7 @@ navbar {
     bottom: 20px;
     background: rgba(225,225,225,0.2);
     text-transform: uppercase;
+    text-shadow: 1px 1px 0px black;
 }
 navbar li + li:before{
     content: '/';

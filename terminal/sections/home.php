@@ -19,6 +19,15 @@
   <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
         
     </nav>
+    <navbar>
+        <ul>
+            <li><a onclick="scroll('#home')" style ="cursor:pointer">About</a></li>
+            <li><a onclick="scroll('#work')" style ="cursor:pointer">Work</a></li>
+            <li><a href="https://askprateek.deviantart.com/" target="_blank">Deviantart</a></li>
+            <li><a href="https://blog.askprateek.com/" target="_blank">blog</a> </li>
+            <li><a onclick="scroll('#contact')" style ="cursor:pointer">Contact</a></li>
+        </ul>
+    </navbar>
     <div style="text-align:center;padding:150px 0px">
         <object>
             <embed src="/terminal/dap.svg" id = 'svg'>
