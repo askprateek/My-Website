@@ -1,15 +1,16 @@
 * {
-  box-sizing: border-box;
+/*    box-sizing: border-box;*/
 }
 
 html,body {
   margin: 0;
   background: white;
-  min-height: 100%;
+overflow: hidden;
 }
 section{
   position: relative;
   height: 100vh;
+  margin: 0px;
 }
 h1,h2,h3,h4,h5,h6,#help{
   font-family: 'Roboto', sans-serif;

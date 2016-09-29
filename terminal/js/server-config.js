@@ -1,5 +1,5 @@
 /* ---- Terminal Window Configurtaion ---- */
-var directory = 'terminal/content/';
+var directory = '/terminal/content/';
 var path='';
 var login = '<span class="user"><b>dap</b>@askprateek.com:~ ';
 var bash = document.getElementById('root').innerHTML;

@@ -183,7 +183,7 @@ command.addEventListener("keydown", function (e) {
       case 'help':
         appendCommand(command);
         autoscroll();
-        readHelpFile('terminal/help.txt');
+        readHelpFile('/terminal/help.txt');
         $('#help').openModal();
         break;
 
