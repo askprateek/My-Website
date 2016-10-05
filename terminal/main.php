@@ -7,7 +7,7 @@
 
   <?php include 'sections/home.php'?>    
   <?php include 'sections/about.php' ?>
-  <?php include 'sections/work.php' ?>
+  <?php include 'sections/work-test.php' ?>
   <?php include 'sections/z-contact.php' ?>
 
 
