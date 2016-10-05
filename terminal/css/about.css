@@ -7,11 +7,10 @@ span{
     text-decoration: underline;
 }
 #home{
-    padding-top:10vh;
+    background: black;
 }
 .data{
-    background: #000;
-    padding-bottom: 20px;
+    padding-top:5vh;
 }
 .data p,h1,h2,h3,h4,h5,h6,a{
     font-family: 'Cuprum', sans-serif;
@@ -19,7 +18,7 @@ span{
 }
 
 .data p{
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 1px;
 }
 @media only screen and (max-width :786px){
@@ -33,7 +32,7 @@ span{
         font-size: 200%;
     }
     .data p{
-        font-size: 150%;
+        font-size: 125%;
     }
 }
 
@@ -42,6 +41,7 @@ span{
 }
 navbar {
     text-align: center;
+    z-index: 99;
     position: fixed;
     width: 100%;
     bottom: 0px;
@@ -70,4 +70,30 @@ navbar li a:hover{
 }
 .name {
     color: #F44336;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+}
+.image h4{
+    position: absolute;
+    bottom:100px;
+    width:70%;
+    padding: 5px;
+    background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 ); /* IE6-9 */
+
+}
+
+.resume {
+    border:1px solid white;
+    padding: 0px 20px 0px 20px;
+}
+.resume:hover {
+    transition:0.3s;
+    background: white;
+    color:black;
 }

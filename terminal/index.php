@@ -13,7 +13,7 @@
   </head>
 
   <body >
-      <?php include 'sections/terminal.php'?>
+      <?php include 'sections/z-terminal.php'?>
     </body>
 <script src='//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>

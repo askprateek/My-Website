@@ -21,11 +21,11 @@
     </nav>
     <navbar>
         <ul>
-            <li><a href='#home' style ="cursor:pointer">About</a></li>
-            <li><a href='#work' style ="cursor:pointer">Work</a></li>
+            <li><a onclick="scrollAnimate('#home')" style ="cursor:pointer">About</a></li>
+            <li><a onclick="scrollAnimate('#work')" style ="cursor:pointer">Work</a></li>
             <li><a href="https://askprateek.deviantart.com/" target="_blank">Deviantart</a></li>
             <li><a href="https://blog.askprateek.com/" target="_blank">blog</a> </li>
-            <li><a href='#contact' style ="cursor:pointer">Contact</a></li>
+            <li><a onclick="scrollAnimate('#contact')" style ="cursor:pointer">Contact</a></li>
         </ul>
     </navbar>
     <div style="text-align:center;padding:150px 0px">

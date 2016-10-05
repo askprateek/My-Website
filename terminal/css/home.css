@@ -135,6 +135,18 @@ nav .button-collapse{
 /* Contact SECTION CSS*/
 #contact{
     padding-top: 20vh; 
+    background: #000;
+}
+#contact .container{   
+    border: 2px solid white;
+    border-radius :3px;
+    padding-left:  5%;
+    padding-right: 5%;
+}
+#contact img{
+    position: relative;
+    top:-132px;
+    margin-bottom:-170px; 
 }
 @media only screen and (min-width: 600px){
     .links {
@@ -145,7 +157,7 @@ nav .button-collapse{
         transition: .3s;
     }
     .links:hover a{
-        color : #F44336;
+        color : #03A9F4;
         transition: .3s;
     }
 }
@@ -160,11 +172,16 @@ nav .button-collapse{
 @media only screen and (max-width:600px){
     .links{
         margin-top:10px;
+/*        max-width: 100%;*/
         background:#FFF;
     }
     .links a{
-        color: #F44336;
+        color: #03A9F4;
         font-size:150%;
     }
 }
 
+
+img {
+    max-height: 80vh;
+}
