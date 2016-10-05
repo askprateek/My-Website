@@ -4,7 +4,7 @@
         <div class="col s12 m8">
             <h1>Hi, I'm <span class="name">Prateek Kumar</span></h1><hr>
             <p> <?php echo date_diff(date_create('1996-03-24'), date_create('today'))->y; ?> 
-                Years old Mozillan, <a href="https://askprateek.deviamtart.com/" target="_blank"><span>Designer</span></a> 
+                Years old Mozillan, <a href="https://askprateek.deviantart.com/" target="_blank"><span>Designer</span></a> 
                 and <a href="https://www.hackerearth.com/@askpk123" target="_blank"><span>Developer</span></a>.
                 I love creating graphics and dope looking websites :b. I believe that designing is a magical Art and luckily I have been blessed with this art.<br>
                 In the pursuit of happiness I made some friends. Adobe Photoshop, Python, HTML, CSS, JavaScript, PHP, Django, Ruby, Ruby on Rails and my friend list will continue to grow. These guys made my life Awesome B).<br>
