@@ -80,7 +80,7 @@
              <div class="col s12 m4">
                 <h4><b>Unix Terminal Port</b></h4>
                  <h5>Javascript |HTML | CSS</h5><hr>
-                 <p><img src="/img/terminal.png">Unix Terminal port in Javascript. Following commands works perfectly : ls, cat, vim, vi, cd and clear.<br><br> TAB, UP and DOWN Key Functionality implemented.</p>
+                 <p><img src="/img/terminal.png">Unix Terminal port in Javascript. Following commands works perfectly : ls, cat, vim, vi, cd and clear.<br><br> TAB, UP and DOWN Key Functionality implemented.<br><a style="color:#FFEB3B" href="/terminal/" target="_blank">Access Terminal</a></p>
              </div>
              
             <div class="col s12 m4">
