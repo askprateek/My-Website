@@ -1,6 +1,8 @@
 <meta charset="UTF-8">
 <title>Digital Artist Prateek </title>
+<link rel="icon" href="/img/favicon.ico">
 <meta name=viewport content="width=device-width, initial-scale=1">
+
 <meta name="description" content="Hi, I'm Prateek Kumar. 20 Years old Mozillian, Designer and Developer. Check out my Portfolio.">
 <link rel="author" href="https://plus.google.com/+DigitalArtistPrateek"/>
 
