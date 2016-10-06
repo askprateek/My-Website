@@ -166,7 +166,7 @@ command.addEventListener("keydown", function (e) {
           $('#term').append('<p>cd: '+user_input[1]+': Not a directory</p>');
         }
         else if ( (user_input[1]=='..') || (user_input[1]=='/') ){
-          directory = 'terminal/content/';
+          directory = '/terminal/content/';
           path ='';
           appendCommand(command);
           changeCommand(path);
