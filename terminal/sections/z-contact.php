@@ -1,4 +1,4 @@
-<section id ="contact" >
+<section id ="contact" class="black">
     <div class="container center-align">
         <img src="/img/robot.png">
     <div class="row">

@@ -135,11 +135,23 @@ nav .button-collapse{
 /* Contact SECTION CSS*/
 #contact{
     padding-top: 20vh; 
-    background: #000;
+/*    background: #000;*/
+    background: url('/img/me.png') no-repeat;
+    background-position: right;
+    background-size:contain;
+}
+@media only screen and (max-width:800px){
+    #contact{
+        background: #000;
+    }
+    #contact .container{
+        border:2px solid #FFF;
+        border-radius : 2px;
+    }
 }
 #contact .container{   
-    border: 2px solid white;
-    border-radius :3px;
+/*    border: 2px solid white;*/
+/*    border-radius :3px;*/
     padding-left:  5%;
     padding-right: 5%;
 }

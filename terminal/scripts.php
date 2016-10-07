@@ -9,21 +9,22 @@
         }, 1000);
     };
     
-//    function scroll (link){
-//        $('body').addClass('scale');
-//        sleep(500).then(()=>{
-//             scrollAnimate(link);
-//        })
-//       
-//        sleep(2100).then(()=>{
-//            $('body').removeClass('scale');
-//        })
-//    }
-//    
-//    function sleep (time) {
-//        return new Promise((resolve) => setTimeout(resolve, time));
-//    }
+    function scroll(link){
+        $('body').addClass('scale');
+        sleep(500).then(()=>{
+             scrollAnimate(link);
+        })
+       
+        sleep(2100).then(()=>{
+            $('body').removeClass('scale');
+        })
+    }
+    
+    function sleep (time) {
+        return new Promise((resolve) => setTimeout(resolve, time));
+    }
     $(document).ready(function() { 
         $(".button-collapse").sideNav();        
     });
 </script>
+
