@@ -136,7 +136,7 @@ nav .button-collapse{
 #contact{
     padding-top: 20vh; 
 /*    background: #000;*/
-    background: url('/img/me.png') no-repeat;
+    background: url('/img/me.jpg') no-repeat;
     background-position: right;
     background-size:contain;
 }

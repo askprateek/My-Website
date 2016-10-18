@@ -16,7 +16,7 @@
                                     <!--        Mozilla Delhi Logo         -->
                 <h4><b>Mozilla Delhi Logo</b></h4>
                  <h5>Adobe Photoshop</h5><hr>
-                 <p><img src="/img/mozilla-delhi-logo.png">Official Logo of Mozilla Delhi Community/ Mozpacers. <a href="https://wiki.mozilla.org/MozillaDelhi#Our_Official_Logo">More Info</a></p>
+                 <p><img src="/img/mozilla-delhi-logo.png">Official Logo of Mozilla Delhi Community/ Mozpacers. <a href="https://wiki.mozilla.org/MozillaDelhi#Our_Official_Logo" target="_blank">More Info</a></p>
              </div>
              
              <div class="col s12 m4">
@@ -32,7 +32,7 @@
                 <h4><b>Porfolio Website V1</b></h4>
                  <h5>Adobe Muse</h5><hr>
                  <p>Made previous portfolio in Adobe Muse.<br>
-                     <a style="color:#FFEB3B" href="/muse">Link</a></p>
+                     <a style="color:#FFEB3B" href="/muse" target="_blank">Link</a></p>
              </div>
                                 <!--          T-Shirts         -->
             <div class="col s12 m4">
