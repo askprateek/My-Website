@@ -20,11 +20,12 @@ nav{
 }
 .side-nav a{
     font-size: 24px;
+    color : white;
 }
 nav .button-collapse{
     position: fixed;
     top: 20px;
-    left: 20px;
+    right: 20px;
 }
 @keyframes scale{
     0%,100% {

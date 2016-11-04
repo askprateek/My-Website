@@ -16,7 +16,7 @@
         </li> -->
     
   </ul>
-  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+  <a href="#" data-activates="slide-out" class="left button-collapse"><i class="material-icons">menu</i></a>
         
     </nav>
     <navbar>
