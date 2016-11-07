@@ -9,20 +9,15 @@
     </div>
     
         <div class="row">
-            <div class="col s12 m3 links">
-                <a href="https://github.com/askprateek/">Github</a>
-            </div>
+        
+                <a class="col s12 m3 links" href="https://github.com/askprateek/" target="_blank" >Github</a>
             
-            <div class="col s12 m3 links">
-                <a href="https://www.hackerearth.com/@askpk123">Hackerearth</a>
-            </div>
-            <div class="col s12 m3 links">
-                <a href="https://www.linkedin.com/in/askprateek/">Linkedin</a>
-            </div>
+                <a class="col s12 m3 links" href="https://www.hackerearth.com/@askpk123"  target="_blank">Hackerearth</a>
+           
+                <a class="col s12 m3 links" href="https://www.linkedin.com/in/askprateek/" target="_blank">Linkedin</a>
             
-            <div class="col s12 m3 links">
-                <a href="https://twitter.com/AskPK123/">Twitter</a>
-            </div>
+                <a class="col s12 m3 links" href="https://twitter.com/AskPK123/" target="_blank">Twitter</a>
+         
         </div>
     </div>
   
