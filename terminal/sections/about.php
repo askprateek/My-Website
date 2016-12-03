@@ -13,9 +13,9 @@
             </p><hr>
             
             <p>
-                <a class="resume" href="http://cv.askprateek.com/resume.pdf" target="_blank">Resume.pdf (8mb)</a>
-                <a class="resume" href="http://cv.askprateek.com/resume.png" target="_blank">Resume.png</a>
-                <a class="resume" href="http://cv.askprateek.com/cv.pdf" target="_blank">cv.pdf</a>
+                <a class="resume" href="/cv/resume.pdf" target="_blank">Resume.pdf (8mb)</a>
+                <a class="resume" href="/cv/resume.png" target="_blank">Resume.png</a>
+                <a class="resume" href="/cv/cv.pdf" target="_blank">cv.pdf</a>
             </p>
         </div>
         <div class="col s12 m4">
